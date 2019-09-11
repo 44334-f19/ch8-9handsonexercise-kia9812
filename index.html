@@ -1,13 +1,99 @@
 <!DOCTYPE html> 
 <html lang="en"> 
 	<head> 
-		<title>LASTNAME Chapter8-9HandsOnExercise</title> 
+		<title>Jones Chapter8-9HandsOnExercise</title> 
 		<meta charset="utf-8"> 
 		<style>
-		
+            tr:first-of-type {background-color: #006;
+                                color: #eaeaea;}
+            td {font-weight: 200;}
+            table {border: solid;
+                    background-color: lightgrey;}
 		</style>
 	</head> 
 <body> 
-
-</body> 
+<h1>My Favorite Movie</h1>
+<table border="1">
+    <thread>
+      <tr>
+        <td colspan="2">Movie Information</td>
+        </tr>
+  <tr>
+     <td>Movie Title</td>
+      <td><a href="https://www.imdb.com/title/tt0081283/">Ordinary People</a></td>
+  </tr>
+        <tr>
+         <td>Director</td>
+        <td>Robert Redford</td>
+        </tr>
+        
+        <tr>
+        <td>Leading Actor</td>
+        <td>Donald Sutherland</td>
+        </tr>
+        
+        <tr>
+        <td>Leading Actress</td>
+        <td>Mary Tyler Moore</td>
+        </tr>
+        
+        <tr>
+        <td>Rating</td>
+        <td>R</td>
+        </tr>
+        
+        <tr>
+        <td>Description</td>
+        <td>A young boy and his family deal with the grief of losing his brother.</td>
+        </tr>
+        
+    </thread>
+    </table>
+    <h1>Music Survey</h1>
+    <p>Required Fields marked with an asterisk *</p>
+    <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+        <div id="wrapper">
+            
+            <fieldset id="userinfo">
+                <legend>Basic Info</legend>
+                <label for="myName">*Name</label>
+                <input type="text" name="myName" id="myName" required="required"
+                       placeholder="your first and last name">
+                <label for="myEmail">*Email</label>
+                <input type="text" name="MyEmail" id="myEmail" required="required"
+                       placeholder="you@yourdomain.com">
+            </fieldset>
+            
+            <fieldset id="favgenre">
+                <legend>Music Preferences</legend>
+                Favorite Genre <br>
+                <input type="radio" name="myStatus" id="country" value="Country">Country <br>
+                <input type="radio" name="myStatus" id="pop" value="Pop">Pop <br>
+                <input type="radio" name="myStatus" id="hiphop" value="Hip-hop">Hip-Hop <br>
+                <input type="radio" name="myStatus" id="jazz" value="Jazz">Jazz <br>
+                <input type="radio" name="myStatus" id="classical" value="Classical">Classical <br><br>
+                
+               <label>Which Instruments Can You Play?</label> <br>
+                <input type="checkbox" name="Insrument" id="g" value="Guitar">Guitar <br>
+                <input type="checkbox" name="Insrument" id="p" value="Piano">Piano<br>
+                <input type="checkbox" name="Insrument" id="s" value="Saxophone">Saxophone<br>
+                <input type="checkbox" name="Insrument" id="f" value="French Horn">French Horn<br>
+                <input type="checkbox" name="Insrument" id="v" value="Violin">Violin<br>
+        </fieldset>
+          <fieldset>
+              <legend>Listening Preferences</legend>
+               <label>Prefered Listening Experience</label>  <br>
+                <select size="3" name="listen" id="listen">
+                    <option value="Concert">Concert</option>
+                    <option value="Car Ride">Car Ride</option>
+                    <option value="Headphones">Headphones</option>
+                    <option value="Speaker">Speaker</option>
+                </select><br><br>
+              
+                <label for="myComments">*Comments</label><br>
+                <textarea name="myComments" id="myComments" rows="3" cols="60" required="required"></textarea><br>
+                <input id="mySubmit" type="submit" value="submit">
+            </fieldset>    
+        </div>
+    </body> 
 </html> 
